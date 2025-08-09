@@ -13,7 +13,16 @@
     />
   </head>
   <body>
-    <div class="container">
+    <h1>Let's play Tic-Tac-Toe !!!</h1>
+
+    <!-- Game Mode Selection -->
+    <div class="mode-selection" id="modeSelection">
+      <h2>Choose Game Mode</h2>
+      <button class="mode-btn" id="twoPlayerMode">👥 Two Players</button>
+      <button class="mode-btn" id="aiPlayerMode">🤖 Player vs AI</button>
+    </div>
+
+    <div class="container" id="gameContainer" style="display: none">
       <div class="board">
         <button class="cell"></button>
         <button class="cell"></button>
@@ -33,7 +42,20 @@
         <button class="cell"></button>
       </div>
     </div>
-    <button id="restart">Restart</button>
+
+    <!-- Game Info -->
+    <div class="game-info" id="gameInfo" style="display: none">
+      <div class="game-stats">
+        <p id="currentPlayer">Current Player: X</p>
+        <p id="gameMode">Mode: Two Players</p>
+        <div class="timer-container">
+          <p id="gameTimer">⏱️ Time: 00:00</p>
+        </div>
+      </div>
+    </div>
+
+    <button id="restart" style="display: none">Restart</button>
+    <button id="backToMenu" style="display: none">Back to Menu</button>
     <div class="popup hide">
       <p id="message"></p>
       <button id="play_again">Play Again</button>

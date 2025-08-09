@@ -20,13 +20,93 @@ body {
   height: 100vh;
   flex-direction: column;
 }
+
+/* Mode Selection Styles */
+.mode-selection {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.mode-selection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mode-btn {
+  display: block;
+  width: 250px;
+  margin: 15px auto;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Info Styles */
+.game-info {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.game-info p {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.timer-container {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#gameTimer {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+}
+
+#backToMenu {
+  padding: 15px 20px;
+  background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .container {
   width: 400px;
   height: 400px;
-  /* position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%; */
 }
 .board {
   width: 100%;
@@ -57,7 +137,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   color: purple;
-  font-size: ;
+  font-size: 2rem;
 }
 .popup {
   background: linear-gradient(
@@ -93,4 +173,9 @@ body {
 }
 .popup.hide {
   display: none;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
 }
